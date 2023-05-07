@@ -225,6 +225,7 @@ Here's a list of types supported currently by the Deno FFI API.
 | `u32`                  | `number`             | `unsigned int`           | `u32`                     |
 | `i64`                  | `number \| bigint`   | `long long int`          | `i64`                     |
 | `u64`                  | `number \| bigint`   | `unsigned long long int` | `u64`                     |
+| `isize`                | `number \| bigint`   | `ssize_t` / `SSIZE_T`    | `isize`                   |
 | `usize`                | `number \| bigint`   | `size_t`                 | `usize`                   |
 | `f32`                  | `number \| bigint`   | `float`                  | `f32`                     |
 | `f64`                  | `number \| bigint`   | `double`                 | `f64`                     |
