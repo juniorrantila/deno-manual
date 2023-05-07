@@ -26,7 +26,14 @@ In C you can write it as:
 
 ```c
 // add.c
-int add(int a, int b) {
+#ifdef _WIN32
+#include <basetsd.h>
+typedef SSIZE_T ssize_t;
+#else
+#include <sys/types.h>
+#endif
+
+ssize_t add(ssize_t a, ssize_t b) {
   return a + b;
 }
 ```
